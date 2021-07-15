@@ -1,0 +1,22 @@
+@media (max-width: 1185px) {
+    .section1 {
+         text-align: center;
+        .image {
+            margin-top: 50px;
+        }
+        h1 {
+            &::after {
+                content: '';
+                width: 310px;
+                height: 3px;
+                display: flex;
+                background-color: $colorblue;
+                margin-top: 11px;
+                margin: 0 auto;
+            }
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}

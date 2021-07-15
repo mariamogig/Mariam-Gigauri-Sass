@@ -1,7 +1,75 @@
 .section1 {
-    .container {
-        background-color: $colorblue;
-        width: 520px;
-        height: 100px;
+    margin: 0 auto;
+    @include d-flex(flex, space-around, wrap);
+    margin-top: 200px;
+    align-items: center;
+    .texts {
+        @extend %size;
+        h1 {
+            font-size: 50px;
+            margin-bottom: 25px;
+            font-family: $font01;
+            color: $colorred;
+            &::after {
+                content: '';
+                width: 310px;
+                height: 3px;
+                display: flex;
+                background-color: $colorblue;
+                margin-top: 11px;
+            }
+            &:hover {
+                color: white;
+            }
+        }
+        p {
+            font-size: 40px;
+            font-family: $font02;
+            color: $colorblack;
+            @extend %size;
+             &:hover {
+                color: white;
+            }
+        }
+       
     }
+    .image {
+        max-width: 500px;
+        height: 450px;
+        img {
+            max-width: 500px;
+            height: 450px;
+        }
+    }
+}
+.section2 {
+    margin-top: 210px;
+    padding-bottom: 300px;
+    @include d-flex(flex, space-evenly, wrap);
+    .block {
+        @extend %size1;
+        text-align: center;
+        background-color: $colorlavend;
+        border-radius: 40px;
+        height: 450px;
+        margin-bottom: 50px;
+        img {
+            width: 200px;
+            padding-top: 70px;
+        }
+        h3 {
+            font-family: $font01;
+            font-size: 25px;
+            margin-bottom: 15px;
+            color: $colorred;
+        }
+        p {
+            font-family: $font02;
+            font-size: 18px;
+            color: $colorblack;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
 }
